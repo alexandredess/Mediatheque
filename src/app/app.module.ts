@@ -8,8 +8,9 @@ import { FooterComponent } from './commons/footer/footer.component';
 import { NotFoundComponent } from './commons/not-found/not-found.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
-import { ProductListComponent } from './pages/product-list/product-list.component';
-import { ProductCardComponent } from './pages/product-card/product-card.component';
+import { ProductListComponent } from './pages/products-page/product-list/product-list.component';
+import { ProductCardComponent } from './pages/products-page/product-card/product-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProductCardComponent } from './pages/product-card/product-card.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

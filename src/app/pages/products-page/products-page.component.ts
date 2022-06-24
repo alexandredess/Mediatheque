@@ -44,8 +44,8 @@ export class ProductsPageComponent implements OnInit {
     annee: 1973,      
     img: "",      
     details: ""
-   },    
-   {        
+  },    
+  {        
     id: 5,      
     nom: "Space Oddity",      
     artiste: "David Bowie",      
