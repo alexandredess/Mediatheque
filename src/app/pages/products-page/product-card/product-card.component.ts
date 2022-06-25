@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ProductsPageComponent } from '../products-page.component';
 
 @Component({
   selector: 'app-product-card',
@@ -7,12 +9,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProductCardComponent implements OnInit {
 
+  
   @Input()
   films:any[]=[]
   albums:any[]=[]
 
   @Input()
-  produit:any;
+  product:any;
 
   obelix:string="https://1.bp.blogspot.com/-mq6ZzkBncwQ/USPN44Aq7oI/AAAAAAAAAuA/tNMcEp4QRdY/s1600/ObelixSaluda.jpg"
 
