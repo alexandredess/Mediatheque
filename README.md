@@ -1,27 +1,26 @@
 # Mediatheque
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+Le projet proposé par Hacene et Kylian lors de ma POE JAVA JEE réalisé avec [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
-## Development server
+## La récupération du projet Médiathèque
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Une fois le projet cloné, ouvrez un terminal de commande et saisissez la commande suivante : `npm install`
+Ceci installera le node_module afin de pouvoir faire tourner en local le projet
 
-## Code scaffolding
+## Le serveur JSON
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+lancer dans un autre terminal de commande la commande suivante `npm run start:db`
+## Le serveur du développement
 
-## Build
+Lancer la commande `ng serve -o` pour avoir le visuel du projet Médiathèque réalisé sous angular.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## La navigation
 
-## Running unit tests
+Dans la barre de navigation de votre navigateur internet vous allez saisir  `http://localhost:4200/` si cela ne s'affiche pas directement. 
+Bravo vous êtes sur la page d'accueil de la médiathèque
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Qui-suis-je 
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Je m'appelle Alexandre Dessoly, j'ai 39 ans et je suis en reconversion professionnelle.
+J'ai entammé une formation POE JAVA JEE et pour le Front-end nous voyons Angular.
+Le projet Médiathèque est un projet sans base de données mais avec un serveur JSON afin de simuler de la donnée et utiliser les services.
