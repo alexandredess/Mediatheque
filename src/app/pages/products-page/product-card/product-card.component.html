@@ -1,0 +1,20 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <div class="card" style="width: 18rem;"> 
+        <h5 class="card-title title">{{product.nom | slice:0:10}}
+            <span *ngIf="product.nom.length>10">...</span>
+        </h5> 
+        <h5 *ngIf="product.real" class="artist">{{product.real}}</h5> 
+        <h5 *ngIf="product.artiste" class="artist">{{product.artiste}}</h5> 
+        <hr >
+            <img [src]="obelix" class="card-img-top img" alt="Obelix" *ngIf="!product.img"> 
+            <img src={{product.img}} class="card-img-top img" alt={{product.nom}} *ngIf="product.img">
+        
+
+        <div class="card-body">  
+            
+            
+            
+            <p class="card-text">{{product.synopsis | slice:0 : 140}}...</p>  
+            <a routerLink="/products/product.type/{{product.id}}" class="btn btn-primary">voir le détail</a>  
+        </div> 
+    </div>
