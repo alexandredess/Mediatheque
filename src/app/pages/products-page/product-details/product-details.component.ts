@@ -1,5 +1,5 @@
 //import du router
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Router, RouterPreloader } from '@angular/router';
 import { Observable } from 'rxjs';
 //import des models
@@ -16,6 +16,7 @@ import { FilmService } from 'src/app/services/film.service';
 })
 export class ProductDetailsComponent implements OnInit {
 
+  @Input()
   product!:Film | Album;
 
   constructor(

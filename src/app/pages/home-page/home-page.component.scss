@@ -1,0 +1,24 @@
+.image{
+    width:35%;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color:black;
+    border: solid 1px orangered;
+    border-radius: 15px;
+    padding:15px;
+}
+a:hover{
+    background-color: orangered;
+    color:white
+}
+h2{
+    text-align: center;
+    padding-top:10px;
+    font-size: 2em;
+}
