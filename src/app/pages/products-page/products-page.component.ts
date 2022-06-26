@@ -16,6 +16,9 @@ export class ProductsPageComponent implements OnInit {
   films : Film[]=[];
 
   albums: Album[] = [];
+
+  film:string="Film";
+  album:string="Album";
   
 
   constructor(private filmService:FilmService, private albumService:AlbumService) { }
