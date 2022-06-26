@@ -15,6 +15,6 @@
             
             
             <p class="card-text">{{product.synopsis | slice:0 : 140}}...</p>  
-            <a routerLink="/products/product.type/{{product.id}}" class="btn btn-primary">voir le détail</a>  
+            <a routerLink="/products/{{typeProduct}}/{{product.id}}" class="btn btn-primary">voir le détail</a>  
         </div> 
     </div>
