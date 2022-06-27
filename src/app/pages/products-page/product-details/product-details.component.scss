@@ -9,6 +9,7 @@
 }
 h2{
     padding :10px;
+    font-size:3em;
 }
 .imageDetails{
     border-radius:10px;
@@ -18,9 +19,11 @@ h2{
 .synopsis{
     font-style: italic;
 }
-.row{
-    display:flex;
-    justify-content: space-between;
+.titleSynopsis{
+    font-size: 1.2em;
+}
+.paragrapheSynopsis{
+    width:300px;
 }
 
 
