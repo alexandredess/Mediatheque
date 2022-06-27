@@ -1,27 +1,38 @@
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 <div class="container">
-    <h2>{{product.nom}}</h2>
     <div class="row">
-        <div class="col1">
-            
-                <img *ngIf="product.img !=''" [src]="product.img" alt="{{product.nom}}" class="imageDetails">
-                <img *ngIf="!product.img"  src="https://1.bp.blogspot.com/-mq6ZzkBncwQ/USPN44Aq7oI/AAAAAAAAAuA/tNMcEp4QRdY/s1600/ObelixSaluda.jpg" class="imageDetails" alt="{{product.nom}}">
-            <div class="col2">
-                <p class="titleSynopsis">Synopsis : <span class="synopsis">{{product.synopsis}}</span></p>
+        <h2 class="text-center">{{product.nom}}</h2>
+    </div>
+    <div class="row">
+        <div class="col-6 text-center pl-3">
+            <img *ngIf="product.img !=''" [src]="product.img" alt="{{product.nom}}" class="imageDetails">
+            <img *ngIf="!product.img"  src="https://1.bp.blogspot.com/-mq6ZzkBncwQ/USPN44Aq7oI/AAAAAAAAAuA/tNMcEp4QRdY/s1600/ObelixSaluda.jpg" class="imageDetails" alt="{{product.nom}}">
+        </div>    
+        <div class="col-6 ">
+            <div class="pb-3 ">
+                <p class="titleSynopsis "><span class="font-weight-bold titleSynopsis">Synopsis :</span></p>
             </div>
+            <div class="pr-3 mt-3 paragrapheSynopsis">
+                <p> <span class="synopsis ">{{product.synopsis}}</span></p>
+            </div>
+            
         </div>
-        <div class="col">
-            <div>
+    </div>
+    <div class="row mt-3 text-center">
+            <div class="col-4">
                 <p>{{product.real}}</p>
                 <p>{{product.artiste}}</p>
             </div>
-            <div>
-                <p>{{product.annee}}</p>
+            <div class="col-4">
+                <p>Année : {{product.annee}}</p>
             </div>
-            <div>
-                <p>{{product.details}}</p>
+            <div class="col-4">
+                <p>Détails : {{product.details}}</p>
             </div>
+    </div>
+    <div class="row mt-3">
+        <div class="text-center">
+            <a routerLink="/products" class="btn btn-primary">retour</a>
         </div>
     </div>
-    <a routerLink="/products" class="btn btn-primary">retour</a>
 </div>
